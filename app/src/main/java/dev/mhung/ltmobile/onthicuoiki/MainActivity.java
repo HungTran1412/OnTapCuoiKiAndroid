@@ -1,7 +1,10 @@
 package dev.mhung.ltmobile.onthicuoiki;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AlertDialog;
@@ -13,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     Button btnPTBac1, btnPTBac2, btnSoChinhPhuong, btnChiSoBMI, btnThoat;
 
-    private int chon = 0;
+    Intent intent=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addEvents() {
+        btnPTBac1.setOnClickListener(v -> btnPTBac1());
+        btnPTBac2.setOnClickListener(v -> btnPTBac2());
+        btnSoChinhPhuong.setOnClickListener(v -> btnSoChinhPhuong());
+        btnChiSoBMI.setOnClickListener(v -> btnChiSoBMI());
+
+        //thoat chuong trinh
         btnThoat.setOnClickListener(v -> thoatChuongTrinh());
     }
 
@@ -43,6 +52,27 @@ public class MainActivity extends AppCompatActivity {
         btnThoat = (Button) findViewById(R.id.btnThoat);
     }
 
+    private void btnPTBac1() {
+        intent = new Intent(MainActivity.this, PhuongTrinhBac1.class);
+        startActivity(intent);
+    }
+
+    private void btnPTBac2() {
+        intent = new Intent(MainActivity.this, PhuongTrinhBac2.class);
+        startActivity(intent);
+    }
+
+    private void btnSoChinhPhuong() {
+        intent = new Intent(MainActivity.this, SoChinhPhuong.class);
+        startActivity(intent);
+    }
+
+    private void btnChiSoBMI() {
+        intent = new Intent(MainActivity.this, ChiSoBMI.class);
+        startActivity(intent);
+    }
+
+    //ham thoat
     private void thoatChuongTrinh() {
         new AlertDialog.Builder(MainActivity.this)
                 .setTitle("Xác nhận")
