@@ -53,12 +53,12 @@ public class PhuongTrinhBac1 extends AppCompatActivity {
     }
 
     private void addViews() {
-        lblPT1KetQua = (TextView) findViewById(R.id.lblPT1KetQua);
-        txtPT1NhapA = (EditText) findViewById(R.id.txtPT1NhapA);
-        txtPT1NhapB = (EditText) findViewById(R.id.txtPT1NhapB);
-        btnPT1GiaiPT = (Button) findViewById(R.id.btnPT1GiaiPT);
-        btnPT1TiepTuc = (Button) findViewById(R.id.btnPT1TiepTuc);
-        btnPT1QuayLai = (Button) findViewById(R.id.btnPT1QuayLai);
+        lblPT1KetQua = (TextView) findViewById(R.id.lblPT2KetQua);
+        txtPT1NhapA = (EditText) findViewById(R.id.txtPT2NhapA);
+        txtPT1NhapB = (EditText) findViewById(R.id.txtPT2NhapB);
+        btnPT1GiaiPT = (Button) findViewById(R.id.btnPT2GiaiPT);
+        btnPT1TiepTuc = (Button) findViewById(R.id.btnPT2TiepTuc);
+        btnPT1QuayLai = (Button) findViewById(R.id.btnPT2QuayLai);
     }
 
     private void giaiPT() {

@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/txtPT1NhapA"
+        android:id="@+id/txtPT2NhapA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -51,10 +51,10 @@
         android:text="Nhap B:"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPT1NhapA" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPT2NhapA" />
 
     <EditText
-        android:id="@+id/txtPT1NhapB"
+        android:id="@+id/txtPT2NhapB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -67,7 +67,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView8" />
 
     <TextView
-        android:id="@+id/lblPT1KetQua"
+        android:id="@+id/lblPT2KetQua"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -76,10 +76,10 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPT1NhapB" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPT2NhapB" />
 
     <Button
-        android:id="@+id/btnPT1GiaiPT"
+        android:id="@+id/btnPT2GiaiPT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -88,10 +88,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblPT1KetQua" />
+        app:layout_constraintTop_toBottomOf="@+id/lblPT2KetQua" />
 
     <Button
-        android:id="@+id/btnPT1TiepTuc"
+        android:id="@+id/btnPT2TiepTuc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -100,10 +100,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPT1GiaiPT" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPT2GiaiPT" />
 
     <Button
-        android:id="@+id/btnPT1QuayLai"
+        android:id="@+id/btnPT2QuayLai"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -112,6 +112,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPT1TiepTuc" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPT2TiepTuc" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
