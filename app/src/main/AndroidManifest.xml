@@ -13,6 +13,9 @@
         android:theme="@style/Theme.OnThiCuoiKi"
         tools:targetApi="31">
         <activity
+            android:name=".HinhTamGiac"
+            android:exported="false" />
+        <activity
             android:name=".ChiSoBMI"
             android:exported="false" />
         <activity

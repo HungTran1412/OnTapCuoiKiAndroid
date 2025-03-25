@@ -14,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnPTBac1, btnPTBac2, btnSoChinhPhuong, btnChiSoBMI, btnThoat;
+    Button btnPTBac1, btnPTBac2, btnSoChinhPhuong, btnChiSoBMI, btnThoat, btnHinhTamGiac;
 
     Intent intent=null;
 
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btnPTBac2.setOnClickListener(v -> btnPTBac2());
         btnSoChinhPhuong.setOnClickListener(v -> btnSoChinhPhuong());
         btnChiSoBMI.setOnClickListener(v -> btnChiSoBMI());
+        btnHinhTamGiac.setOnClickListener(v -> btnHinhTamGiac());
 
         //thoat chuong trinh
         btnThoat.setOnClickListener(v -> thoatChuongTrinh());
@@ -49,27 +50,28 @@ public class MainActivity extends AppCompatActivity {
         btnPTBac2 = (Button) findViewById(R.id.btnPTBac2);
         btnSoChinhPhuong = (Button) findViewById(R.id.btnSoChinhPhuong);
         btnChiSoBMI = (Button) findViewById(R.id.btnChiSoBMI);
+        btnHinhTamGiac = (Button) findViewById(R.id.btnHinhTamGiac);
         btnThoat = (Button) findViewById(R.id.btnThoat);
     }
 
     private void btnPTBac1() {
-        intent = new Intent(MainActivity.this, PhuongTrinhBac1.class);
-        startActivity(intent);
+        QuayLai.quayLai(MainActivity.this, PhuongTrinhBac1.class);
     }
 
     private void btnPTBac2() {
-        intent = new Intent(MainActivity.this, PhuongTrinhBac2.class);
-        startActivity(intent);
+        QuayLai.quayLai(MainActivity.this, PhuongTrinhBac2.class);
     }
 
     private void btnSoChinhPhuong() {
-        intent = new Intent(MainActivity.this, SoChinhPhuong.class);
-        startActivity(intent);
+        QuayLai.quayLai(MainActivity.this, SoChinhPhuong.class);
     }
 
     private void btnChiSoBMI() {
-        intent = new Intent(MainActivity.this, ChiSoBMI.class);
-        startActivity(intent);
+        QuayLai.quayLai(MainActivity.this, ChiSoBMI.class);
+    }
+
+    private void btnHinhTamGiac(){
+        QuayLai.quayLai(MainActivity.this, HinhTamGiac.class);
     }
 
     //ham thoat
