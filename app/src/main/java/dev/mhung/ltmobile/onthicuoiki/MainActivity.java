@@ -15,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     Button btnPTBac1, btnPTBac2, btnSoChinhPhuong, btnChiSoBMI, btnThoat, btnHinhTamGiac;
+    Button btnFibonacci;
 
     Intent intent=null;
 
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         btnSoChinhPhuong.setOnClickListener(v -> btnSoChinhPhuong());
         btnChiSoBMI.setOnClickListener(v -> btnChiSoBMI());
         btnHinhTamGiac.setOnClickListener(v -> btnHinhTamGiac());
+        btnFibonacci.setOnClickListener(v -> QuayLai.quayLai(MainActivity.this, Fibonacci.class));
 
         //thoat chuong trinh
         btnThoat.setOnClickListener(v -> thoatChuongTrinh());
@@ -52,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         btnChiSoBMI = (Button) findViewById(R.id.btnChiSoBMI);
         btnHinhTamGiac = (Button) findViewById(R.id.btnHinhTamGiac);
         btnThoat = (Button) findViewById(R.id.btnThoat);
+        btnFibonacci = (Button) findViewById(R.id.btnFibonacci);
     }
 
     private void btnPTBac1() {
