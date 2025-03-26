@@ -72,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFibonacci" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSoNguyenTo" />
 
     <Button
         android:id="@+id/btnHinhTamGiac"
@@ -95,5 +95,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnHinhTamGiac" />
+
+    <Button
+        android:id="@+id/btnSoNguyenTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Kiem tra so nguyen to"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnFibonacci"
+        tools:layout_editor_absoluteX="98dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
