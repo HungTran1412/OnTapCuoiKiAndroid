@@ -93,8 +93,9 @@
         android:text="Kiem tra fibonacci"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnHinhTamGiac" />
+        app:layout_constraintTop_toBottomOf="@+id/btnHinhTron" />
 
     <Button
         android:id="@+id/btnSoNguyenTo"
@@ -105,5 +106,15 @@
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/btnFibonacci"
         tools:layout_editor_absoluteX="98dp" />
+
+    <Button
+        android:id="@+id/btnHinhTron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Hinh tron"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnHinhTamGiac"
+        tools:layout_editor_absoluteX="148dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
